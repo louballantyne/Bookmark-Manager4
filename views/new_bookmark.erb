@@ -1,0 +1,15 @@
+
+<%= flash[:warning] %>
+<h1> Your Bookmarks: </h1>
+
+<form action='/add_bookmark' method='post'>
+  <label for="title">Name of URL:</label>
+  <input type='text' name='title' required>
+  <label for="bookmark">URL:</label>
+  <input type='text' name='bookmark' required>
+  <input type='submit' value='bookmark'>
+</form>
+<br>
+<form action='/bookmark'>
+  <input type='submit' value='Cancel'>
+</form>
